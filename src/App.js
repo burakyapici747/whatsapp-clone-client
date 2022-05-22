@@ -1,24 +1,22 @@
 import React, {Component} from 'react';
-import {MainAppStyled} from './Assets/styles/MainApp.styled';
-import {ContainerStyled} from './Assets/styles/Container.styled';
-import Global from './Assets/styles/Global';
-import {ContentStyled} from './Assets/styles/Content.styled';
-import SideBar from './Components/SideBar';
+import Global from './Assets/Global';
+import {ContainerStyled} from './Assets/Container.styled';
+import SideBar from './Components/SideBar/SideBar';
+import Content from "./Components/Content/Content";
+
 
 const App = () => {
     return (
         <>
             <Global/>
-            <MainAppStyled>
-                <ContainerStyled>
-                    <SideBar>
+            <ContainerStyled>
+                <SideBar>
 
-                    </SideBar>
-                    <ContentStyled>
+                </SideBar>
+                <Content>
 
-                    </ContentStyled>
-                </ContainerStyled>
-            </MainAppStyled>
+                </Content>
+            </ContainerStyled>
         </>
     );
 }
