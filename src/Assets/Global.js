@@ -25,6 +25,7 @@ export default createGlobalStyle`
       height: 127px;
       content: "";
       background-color: #20A884;
+      border: 1px solid black;
     }
   }
 

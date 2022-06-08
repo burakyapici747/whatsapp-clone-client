@@ -4,7 +4,7 @@ import {
     SideBarStyled,
     SideBarHeaderStyled,
     SideBarProfile,
-    SideBarProfileAvatarContainer, SideBarProfileImage
+    SideBarProfileAvatarContainer, SideBarProfileImage, SideBarProfileImageStyled
 } from "../../Assets/styles/SideBar/SideBar.styled";
 import {ContentStyled} from '../../Assets/styles/Content/Content.styled';
 import SideBarSearch from "./SideBarSearch";
@@ -18,9 +18,8 @@ const SideBar = () => {
                 <SideBarHeaderStyled>
                     <SideBarProfile>
                         <SideBarProfileAvatarContainer>
-                            <SideBarProfileImage src={ProfileImage}>
-
-                            </SideBarProfileImage>
+                            <SideBarProfileImageStyled src={ProfileImage}>
+                            </SideBarProfileImageStyled>
                         </SideBarProfileAvatarContainer>
                     </SideBarProfile>
                     <SideBarSearch/>

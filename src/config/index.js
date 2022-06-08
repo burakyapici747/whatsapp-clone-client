@@ -9,11 +9,17 @@ const ROUTE_PATHS = {
 };
 
 const API_PATHS = {
-    LOGIN: () => {
+    LOGIN: (email, password) => {
         return `${BASE_URL}user/login`;
     },
-    REGISTER: () => {
+    REGISTER: (email, password) => {
         return `${BASE_URL}user/register`;
+    },
+    GET_CHATS: (id) => {
+        return `${BASE_URL}chat/chats/${id}`;
+    },
+    GET_CHAT_MESSAGES: (chatId) => {
+        return `${BASE_URL}message/messages/${chatId}`;
     },
 };
 
@@ -42,7 +48,7 @@ const ROUTE_CONFIG = {
 
 export default ROUTE_CONFIG;
 export {
-    BASE_URL,
     API_PATHS,
+    BASE_URL,
     ROUTE_PATHS,
 };

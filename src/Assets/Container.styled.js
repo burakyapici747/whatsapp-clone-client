@@ -6,8 +6,7 @@ export const ContainerStyled = styled.div`
   width: 100%;
   display: flex;
   flex-direction: row;
-  top: 19px;
   position: relative;
-  height: calc(100vh - 38px);
+  height: 100vh;
   max-width: 1600px;
 `;

@@ -5,6 +5,7 @@ export const SideBarStyled = styled.div`
   display: flex;
   flex-direction: column;
   background-color: white;
+  min-width: 300px;
 `;
 
 export const SideBarHeaderStyled = styled.div`
@@ -22,7 +23,7 @@ export const SideBarProfile = styled.div`
   padding: 10px 16px;
 `;
 
-export const SideBarProfileImage = styled.img`
+export const SideBarProfileImageStyled = styled.img`
   height: 40px;
   width: 40px;
   border-radius: 50%;

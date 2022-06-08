@@ -27,6 +27,7 @@ export const ContentMainMessagesStyled = styled.ul`
   height: 100%;
   flex-direction: column;
   padding: 50px 9% 50px 9%;
+  background-color: ${(props) => (props.chatId) ? '#F8F8F8' : '#F0EBE3'};
 `;
 
 export const ContentMainMessageStyled = styled.li`
@@ -34,7 +35,7 @@ export const ContentMainMessageStyled = styled.li`
   display: flex;
   flex-direction: row;
   justify-content: ${(props) => (props.side) ? 'start' : 'flex-end'};
-  margin-bottom: 2px;
+  margin-top: ${ (props) => (props.side) ? '3px' : '20px'};
 `;
 
 export const ContentMainMessageBoxStyled = styled.div`
@@ -62,6 +63,7 @@ export const ContentMainMessageInfoMessageStyled = styled.div`
   font-size: 14.2px;
   line-height: 19px;
   color: #111b21;
+  font-family: Helvetica,sans-serif;
 `;
 
 export const ContentMainMessageInfoTimeStyled = styled.div`

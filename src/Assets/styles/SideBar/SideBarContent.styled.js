@@ -5,7 +5,7 @@ export const SideBarContentStyled = styled.div`
   width: 100%;
 `;
 
-export const SideBarMessages = styled.ul`
+export const SideBarMessagesStyled = styled.ul`
   height: 100%;
   width: 100%;
   overflow: auto;
@@ -13,29 +13,30 @@ export const SideBarMessages = styled.ul`
   flex-direction: column;
 `;
 
-export const SideBarMessage = styled.li`
+export const SideBarMessageStyled = styled.li`
   height: 72px;
   background-color: #fff;
   display: flex;
   flex-direction: row;
   cursor: pointer;
+  padding: 10px;
   &:hover{
     background-color: #f5f6f6;
   }
 `;
 
-export const SideBarImageAvatar = styled.div`
-  height: 72px;
-  width: 77px;
+export const SideBarImageAvatarStyled = styled.img`
+  height: 49px;
+  width: 49px;
+  border-radius: 50%;
 `;
 
 export const SideBarMessageInfo = styled.div`
-  
   border-bottom: 1px solid #e9edef;
   flex: 1;
   display: flex;
   flex-direction: column;
-  padding-right: 15px;
+  padding: 15px;
   justify-content: center;
 `;
 

@@ -41,7 +41,7 @@ const Login = () => {
             }
         } catch (err) {
             //errMsg yi ayarla
-            console.log("Hata var2 ");
+            console.log("Hata var2 ", err);
         }
     };
 
@@ -84,6 +84,4 @@ const Login = () => {
         </>
     );
 };
-
-
 export default Login;
